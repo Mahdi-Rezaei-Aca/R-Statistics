@@ -6,32 +6,56 @@
 # write a code in RScript the click on Run or enter Enter+Ctrl
 # Let's go to in the R Script and write some code
 
-#____________________________________________________________________Section 1____________________________________________________________________#
+#_____________________________________________________________Section 1: package & data____________________________________________________________________#
 
 # package has many command to suing in the special field -->  agricolae package includes some agriculture statistic methode
-# show installed packages -->by the bellowing command
+# show installed packages --> by the following command
 installed.packages()
 
-# install packages (you have to be online) -->by the bellowing command
+# install packages (you have to be online) --> by the following command
 install.packages('agricolae') 
 
 # to using pacjages firt of all you have to import it every time you want to use it
 library('agricolae')
 
-# see all data sets in the package --> by the bellowing command
+# see all data sets in the package --> by the following command
 data(package="agricolae")
 
-# show imported packages -->by the bellowing command
+# show imported packages --> by the following command
 search()
 
-# remove one packages -->by the bellowing command
+# remove one packages --> by the following command
 Remove.packages("agricolae")
 
 # packages may have a few datasets --> corn is a dataset attached to agricolae
-# try to use data from the installed packages --> by the bellowing command
+# try to use data from the installed packages --> by the following command
 data("corn")
 
-# see the corn data --> by the bellowing command
+# see the corn data --> by the following command
 corn
 
-#
+# show all executed datas --> by the following command
+les()
+
+# show all executed data with some words --> by the following command
+les('or')
+
+# delete all executed data --> by the following command
+rm(list=ls())
+
+# show helping of every command --> by the following command
+help(log)
+
+#show something in any command at R commands --> by the following command
+apropos("anova")
+
+#_____________________________________________________________Section 2: import data____________________________________________________________________#
+
+
+
+
+
+
+
+
+
