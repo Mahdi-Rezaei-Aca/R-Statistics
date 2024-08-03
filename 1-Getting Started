@@ -1,1 +1,6 @@
-
+# Firstly, Download & intall R --> --> You can download it for Window, macOS, and Linux:
+# https://cran.rstudio.com
+# to code efectively --> Rstudio is good einviroment(IDE) for R --> Download & install RStudio --> You can download it for Window, macOS, and Linux:
+# https://posit.co/download/rstudio-desktop
+# In R studio hit the File --> click on the new file --> make a R Script
+# Let's go to in the R Script and write some code
