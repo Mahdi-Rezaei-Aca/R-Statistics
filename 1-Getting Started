@@ -57,7 +57,7 @@ getwd()
 # set directory shows place which you want to save datads --> by the following command
 setwd("C:/Users/...")
 
-# reading txt type data  --> by the two following command
+# reading Text type data  --> by the two following command
 # choose.files() : this is a command which you can choose a data by it
 # header=TRUE : this is a command which shows the header of datas
 # sep="\t" : this is a command which speperate datas by camma in txt file of data
@@ -65,12 +65,18 @@ setwd("C:/Users/...")
 mydata<-read.table("namedata.txt", header=TRUE,  sep="\t") # way 1
 mydata<-read.table(choose.files(), header=TRUE,  sep="\t") # way 2
 
-# reading csv type data  --> by the two following command
+# reading CSV type data  --> by the two following command
 # choose.files() : this is a command which you can choose a data by it
 # header=TRUE : this is a command which shows the header of datas
 # namedata.csv : this is the name of data at the directory which you set
 mydata<-read.table("namedata.csv", header=TRUE) # way 1
 mydata<-read.table(choose.files(), header=TRUE) # way 2
+
+# show 6 rows of data --> by the two following command
+haead(mydata)
+
+# show the datas of column by the name of column --> by the two following command
+mydata$column name
 
 
 
