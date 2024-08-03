@@ -9,12 +9,29 @@
 #____________________________________________________________________Section 1____________________________________________________________________#
 
 # package has many command to suing in the special field -->  agricolae package includes some agriculture statistic methode
+# show installed packages -->by the bellowing command
+installed.packages()
+
 # install packages (you have to be online) -->by the bellowing command
 install.packages('agricolae') 
 
 # to using pacjages firt of all you have to import it every time you want to use it
 library('agricolae')
 
+# see all data sets in the package --> by the bellowing command
+data(package="agricolae")
+
+# show imported packages -->by the bellowing command
+search()
+
+# remove one packages -->by the bellowing command
+Remove.packages("agricolae")
+
 # packages may have a few datasets --> corn is a dataset attached to agricolae
 # try to use data from the installed packages --> by the bellowing command
 data("corn")
+
+# see the corn data --> by the bellowing command
+corn
+
+#
