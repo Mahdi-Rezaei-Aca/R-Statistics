@@ -1,0 +1,126 @@
+
+
+
+
+#_____________________________________Section 1: plot of datas______________________________________#
+
+new <- list(c1=c(rnorm(50)), c2=c(rnorm(50)))
+new
+hist(new$c1)
+hist(new$c2)
+
+stem(new$c1)
+stem(new$c2)
+
+qqnorm(new$c1)
+qqnorm(new$c2)
+
+qqline(new$c1)
+qqline(new$c2)
+
+boxplot(new$c1)
+boxplot(new$c2)
+
+new1 <- list(c1=c(rnorm(14)), c2=c(5,5,6,6,7,8,9,10,10,12))
+boxplot(new1$c1,new1$c2)
+
+barplot(new1$c1,col = "red")
+
+pie(new1$c2)
+
+new3 <- list(c1=c(1:25), c2=c(1:25)**0.05)
+
+boxplot(new3$c1,new1$c2)
+plot(new3$c1, new3$c2, type="o")
+
+new4 <- list(c1=c(1:25), c2=c(1:25)**0.05)
+new5 <- list(c1=c(1:25), c2=c(1:25)**2)
+
+par(mfrow=c(2,1))
+plot(new4$c1, new4$c2, type="o")
+plot(new5$c1, new5$c2, type="o")
+
+# an example of plot with all details
+        plot(mydata$X1,mydata$X2,pch=25,type="o", col="blue", ylim=c(0,210), xlim=c(0,1),
+            lwd="2",bty="l",col="brown", col.lab="red",col.axis="blue", col.sub="green",
+            col.main="black", fill="blue", xlab="x1", ylab="x2", main="datavv", sub="fddg",
+            cex.axis="1",  cex.lab="1",cex.sub="1", cex.main="1",font.lab="3",font.axis="3",
+            font.sub="3",font.main="3")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
