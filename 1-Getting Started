@@ -6,7 +6,7 @@
 # write a code in RScript the click on Run or enter Enter+Ctrl
 # Let's go to in the R Script and write some code
 
-#_____________________________________________________________Section 1: package & data____________________________________________________________________#
+#_____________________________________Section 1: package & data______________________________________#
 
 # package has many command to suing in the special field -->  agricolae package includes some agriculture statistic methode
 # show installed packages --> by the following command
@@ -49,7 +49,7 @@ help(log)
 #show something in any command at R commands --> by the following command
 apropos("anova")
 
-#_____________________________________________________________Section 2: import data____________________________________________________________________#
+#_____________________________________Section 2: import data______________________________________#
 
 # get directory shows place which datads saved --> by the following command
 getwd()
@@ -78,9 +78,22 @@ haead(mydata)
 # show the datas of column by the name of column --> by the two following command
 mydata$column name
 
+#_____________________________________Section 3: pre analysis______________________________________#
 
+# show the mean of the datas --> by the two following command
+mean(mydata)
 
+# show the standard devision of the datas --> by the two following command
+sd(mydata)
 
+# show the variance of the datas --> by the two following command
+var(mydata)
+
+# show the median of the datas --> by the two following command
+median(mydata)
+
+# show the quantile of the datas --> by the two following command
+quantile(mydata)
 
 
 
