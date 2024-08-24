@@ -17,7 +17,7 @@ alternative hypothesis: true mean is not equal to 120
 95 percent confidence interval: 111.2239 117.7761
 sample estimates: mean of x 114.5 
 
-# ____________________________One-sample t-test_____________________________
+# ____________________________Two-sample t-test_____________________________
 
 mydata <-list(c1=c(121,111,100,120,121,110,112,110,108,112,100,120,121,119,120,123,111,111,122,118), c2=c(128,118,108,128,127,115,118,117,104,116,118,128,129,119,129))
 library(ggpubr)
