@@ -1,1 +1,17 @@
+# ____________________________One-sample t-test_____________________________
+#make a data
+mydata <-list(c1=c(121,111,100,120,121,110,112,110,108,112,100,120,121,119,120,123,111,111,122,118))
+
+#install packages 
+install.packages("ggpubr")
+
+#t test
+library(ggpubr)
+t.test(mydata$c1, mu=120, alternative = "two.sided")
+
+# answer
+
+
+
+
 
