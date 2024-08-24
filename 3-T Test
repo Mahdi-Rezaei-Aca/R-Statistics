@@ -1,6 +1,6 @@
 # ____________________________One-sample t-test_____________________________
 #make a data
-mydata <-list(c1=c(121,111,100,120,121,110,112,110,108,112,100,120,121,119,120,123,111,111,122,118))
+mydata <-list(c1=c(121,111,100,120,121,110,112,110,108,112,100,120,121,119,120,123,111,111,122,118), c2=c(128,118,108,128,127,115,118,117,104,116,118,128,129,119,129))
 
 #install packages 
 install.packages("ggpubr")
@@ -10,8 +10,47 @@ library(ggpubr)
 t.test(mydata$c1, mu=120, alternative = "two.sided")
 
 # answer
+One Sample t-test
+data:  mydata$c1
+t = -3.5138, df = 19, p-value = 0.002321
+alternative hypothesis: true mean is not equal to 120
+95 percent confidence interval: 111.2239 117.7761
+sample estimates: mean of x 114.5 
+
+# ____________________________One-sample t-test_____________________________
+
+mydata <-list(c1=c(121,111,100,120,121,110,112,110,108,112,100,120,121,119,120,123,111,111,122,118), c2=c(128,118,108,128,127,115,118,117,104,116,118,128,129,119,129))
+library(ggpubr)
+t.test(mydata$c1, mydata$c2, data=mydata, var.equal =T)
+
+# answer
+Two Sample t-test
+data:  mydata$c1 and mydata$c2
+t = -2.2352, df = 33, p-value = 0.03229
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval: -10.7609931  -0.5056736
+sample estimates:mean of x mean of y 114.5000  120.1333 
+
+
+# ____________________________Paired t-test_____________________________
+
+newdata <- list(c1=c(50,51,52,50,49,48,56,55,57,53), c2=c(53,54,55,53,49,49,59,58,59,56))
+library(ggpubr)
+t.test(newdata$c1, newdata$c2, data=newdata, paired =TRUE)
+
+# answer
+Paired t-test
+data:  newdata$c1 and newdata$c2
+t = -7.0602, df = 9, p-value = 5.919e-05
+alternative hypothesis: true mean difference is not equal to 0
+95 percent confidence interval: -3.168986 -1.631014
+sample estimates:mean difference -2.4 
 
 
 
 
 
+
+
+
+ 
